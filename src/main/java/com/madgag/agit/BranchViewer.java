@@ -93,7 +93,7 @@ public class BranchViewer extends RepoScopedActivityBase {
         actionBar.setDisplayHomeAsUpEnabled(true);
         setCommits();
         revCommitListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener() {
-            public void onRefresh() {
+            public void onRefresh(PullToRefreshBase refreshView) {
                 Fetch fetch = new Fetch(repository, DEFAULT_REMOTE_NAME);
                 gitAsyncTaskFactory.createTaskFor(fetch, new CasualShortTermLifetime() {
                     public void error(OpNotification errorNotification) {
@@ -110,6 +110,11 @@ public class BranchViewer extends RepoScopedActivityBase {
                     }
                 }).execute();
             }
+
+            //@Override
+            //public void onRefresh(PullToRefreshBase refreshView) {
+
+            //}
         });
     }
 

@@ -9,5 +9,11 @@ git for android
    https://github.com/rtyley/agit
 
    2. use actionBarSherlock
+          Android-PullToRefresh
+
+      git://github.com/chrisbanes/Android-PullToRefresh.git
+
+      libsproj/pulltorefresh
+
 
    --END
