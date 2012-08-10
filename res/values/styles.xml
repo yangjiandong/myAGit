@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ExecutionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/executionbar_background</item>
+        <item name="android:paddingLeft">14dip</item>
+        <item name="android:paddingRight">14dip</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+
+    <style name="GitMessage">
+        <item name="android:textSize">10sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:autoLink">web|email|map</item>
+        <item name="android:fadingEdge">vertical|horizontal</item>
+        <item name="android:fadingEdgeLength">20dip</item>
+    </style>
+
+    <style name="code" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="WelcomeText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#cc000000</item>
+    </style>
+
+    <style name="addedText" parent="@style/code">
+        <item name="android:textColor">@color/addedText</item>
+    </style>
+
+    <style name="removedText" parent="@style/code">
+        <item name="android:textColor">@color/removedText</item>
+    </style>
+
+    <style name="Theme.App" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+
+    <style name="BigButton" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">24dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/friendly_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SmallButton" parent="@android:style/Widget.Button.Small">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:textSize">12dip</item>
+        <item name="android:background">@drawable/friendly_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">1dp</item>
+    </style>
+</resources>
