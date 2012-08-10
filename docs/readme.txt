@@ -15,5 +15,8 @@ git for android
 
       libsproj/pulltorefresh
 
+   3. mvn dependency:copy-dependencies
+
+   It will copy all jars described in your pom.xml to your target folder.
 
    --END
